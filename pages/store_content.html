@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="store_content">
+            <div class="container">
+                <h1 class="store-title h2 font-weight mb-4">門市據點</h1>
+                <div class="store-area d-flex ">
+                    <p class="h4">選擇地區</p>
+                    <select name="area" id="">
+                        <option value="">台北市</option>
+                    </select>
+                </div>
+                <div class="store_content-list d-flex">
+                    <div class="store_content-card">
+                      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true"
+                        alt="store">
+                      <div class="store_content-card-text">
+                        <h5 class="h5">台北中山旗艦店</h5>
+                        <ul class="store_content__detail">
+                          <li class="d-flex align-items-c">
+                            <span class="material-symbols-outlined align-self-c">
+                              call
+                            </span>
+                            電話：(02)000-1234
+                          </li>
+                          <li class="d-flex align-items-c">
+                            <span class="material-symbols-outlined">
+                              schedule
+                            </span>
+                            營業時間：10:00-21:00
+                          </li>
+                          <li class="d-flex align-items-c">
+                            <span class="material-symbols-outlined">
+                              location_on
+                            </span>
+                            地址：台北市中山區南京東路25巷2-1號
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="store_content-map">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/web-layout-single-test.appspot.com/o/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202020-02-13%2016.35.44%402x.png?alt=media&token=ba2f8c46-6107-4450-8065-92d5f666a22f"
+                        alt="map">
+                    </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>

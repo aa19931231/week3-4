@@ -1,0 +1,9 @@
+.store_content {
+    padding: 96px 0 80px 0;
+    &-card{
+        border: 1px solid #00000020;
+        &-text{
+            border: 1px solid #00000020;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.store {
+    padding: 96px 0 80px 0;
+
+    &-title {
+        border-left: 8px solid #9F1213;
+    }
+
+    &-area {
+        margin-bottom: 40px;
+
+        p {
+            margin-right: 16px;
+        }
+
+        select {
+            font-size: 18px;
+            color: #495057;
+            padding: 6px 0;
+            width: 23.4%;
+
+            @include pad {
+                width: 50%;
+            }
+        }
+    }
+
+    &-name {
+        border: 1px solid #00000020;
+        padding: 8px 0 8px 24px;
+    }
+
+    &-information {
+        border: 1px solid #00000020;
+        padding: 16px 24px;
+    }
+}
+
+.branch {
+    span {
+        margin-right: 10px;
+    }
+
+    gap: 24px;
+
+    &-list {
+        width: calc(33.33% - 16px);
+        margin-bottom: 48px;
+
+        @include pad {
+            width: calc(50% - 12px);
+            margin-bottom: 24px;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+
+    &-btn {
+        text-align: center;
+        text-wrap: nowrap;
+        font-size: 19px;
+        background-color: #000;
+        width: 100%;
+        padding: 12px 0;
+    }
+}
